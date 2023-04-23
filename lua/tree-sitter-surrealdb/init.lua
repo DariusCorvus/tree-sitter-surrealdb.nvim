@@ -34,6 +34,10 @@ local function setup()
 	(casting) @conceal
 	(duration) @number
 	]]
+	
+	local injections_scm = [[
+	(scripting_content) @javascript
+	]]
 
 	local runtime_path = vim.api.nvim_list_runtime_paths()[1]
 	if vim.fn.isdirectory(runtime_path .. "/queries") == 0 then
@@ -48,6 +52,11 @@ local function setup()
 		io.output(highlights_file)
 		io.write(highlights_scm)
 		io.close(highlights_file)
+		
+		local injections_file = io.open(runtime_path .. "/queries/surrealdb/injections.scm", "w")
+		io.output(injections_file)
+		io.write(injections_scm)
+		io.close(injections_file)
 	end
 end
 	
