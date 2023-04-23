@@ -12,6 +12,9 @@ tree-sitter-surrealdb nvim integration plugin
 [tree-sitter-surrealdb](https://github.com/DariusCorvus/tree-sitter-surrealdb)
 
 ## usage
+###
+The official extension for SurrealDB files is `.surql`, by default files which matches the pattern `*.surql` are detected.
+
 ### requirements
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 ### installation
