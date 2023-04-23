@@ -21,7 +21,7 @@ local function setup()
 	(number) @number
 	(punctuation) @punctuation
 	(operator) @operator
-	(variable) @namespace
+	(variable) @type
 	(constant) @constant.builtin
 	(function) @function
 	(bool) @boolean
@@ -30,9 +30,10 @@ local function setup()
 	(record) @type
 	(function) @function
 	(property) @field
-	(identifier) @namespace
+	(identifier) @text.emphasis
 	(casting) @conceal
 	(duration) @number
+	(type) @type
 	]]
 	
 	local injections_scm = [[
