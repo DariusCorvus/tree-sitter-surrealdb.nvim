@@ -21,7 +21,7 @@ local function setup()
 	(number) @number
 	(punctuation) @punctuation
 	(operator) @operator
-	(variable) @type
+	(variable) @namespace
 	(constant) @constant.builtin
 	(function) @function
 	(bool) @boolean
@@ -30,7 +30,7 @@ local function setup()
 	(record) @type
 	(function) @function
 	(property) @field
-	(identifier) @identifer
+	(identifier) @namespace
 	(casting) @conceal
 	(duration) @number
 	]]
