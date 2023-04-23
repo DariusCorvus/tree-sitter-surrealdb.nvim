@@ -1,6 +1,13 @@
 # tree-sitter-surrealdb.nvim
 tree-sitter-surrealdb nvim integration plugin
 
+## features
+### highlighting
+![highlighting](https://raw.githubusercontent.com/DariusCorvus/DariusCorvus/main/assets/wezterm-gui_X5Q2m2wOXH.png)
+
+### inline javascript
+![Inline Javascript](https://raw.githubusercontent.com/DariusCorvus/DariusCorvus/main/assets/wezterm-gui_JxVBb8Lgg5.png)
+
 ## tree-sitter
 [tree-sitter-surrealdb](https://github.com/DariusCorvus/tree-sitter-surrealdb)
 
