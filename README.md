@@ -7,10 +7,10 @@ tree-sitter-surrealdb nvim integration plugin
 ## usage
 ### installation
 ```lua
-	use({
-		"dariuscorvus/tree-sitter-surrealdb.nvim",
-		requires = { "nvim-treesitter" },
-	})
+use({
+	"dariuscorvus/tree-sitter-surrealdb.nvim",
+	requires = { "nvim-treesitter" },
+})
 ```
 
 ### setup
