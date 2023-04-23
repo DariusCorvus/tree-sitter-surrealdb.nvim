@@ -30,7 +30,7 @@ local function setup()
 	(record) @type
 	(function) @function
 	(property) @field
-	(identifier) @identifier
+	(identifier) @identifer
 	(casting) @conceal
 	(duration) @number
 	]]
