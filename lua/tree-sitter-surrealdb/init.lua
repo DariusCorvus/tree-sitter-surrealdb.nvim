@@ -1,4 +1,4 @@
-local function setup(
+local function setup()
 	vim.api.nvim_command([[
 	augroup SurqlFiletype
 	  autocmd BufRead,BufNewFile *.surql :set filetype=surql
