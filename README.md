@@ -18,6 +18,9 @@ The official extension for SurrealDB files is `.surql`, by default files which m
 ### requirements
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 ### installation
+
+_Packer:_
+
 ```lua
 use({
 	"dariuscorvus/tree-sitter-surrealdb.nvim",
@@ -25,8 +28,26 @@ use({
 })
 ```
 
+_Lazy:_
+
+Try running `:TSInstall surrealdb` if syntax highlighting doesn't appear after loading plugin.
+
+```lua
+ {
+  "dariuscorvus/tree-sitter-surrealdb.nvim",
+  dependencies = { "nvim-treesitter/nvim-treesitter" },
+  config = function()
+    -- setup step
+    require("tree-sitter-surrealdb").setup()
+  end,
+}
+```
+
 ### setup
+
+_Packer:_
 
 ```lua
 require("tree-sitter-surrealdb").setup()
 ```
+
