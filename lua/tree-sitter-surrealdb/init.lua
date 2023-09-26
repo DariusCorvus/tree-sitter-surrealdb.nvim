@@ -1,10 +1,10 @@
 local function setup()
-    vim.filetype.add({
-        extension = {
-            surql = "surql",
-            surrealql = "surql"
-        }
-    });
+	vim.filetype.add({
+	    extension = {
+	        surql = "surql",
+	        surrealql = "surql"
+	    }
+	});
 
 	local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
 	parser_config.surrealdb = {
