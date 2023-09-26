@@ -2,6 +2,7 @@ local function setup()
     vim.filetype.add({
         extension = {
             surql = "surql",
+            surrealql = "surql"
         }
     });
 
