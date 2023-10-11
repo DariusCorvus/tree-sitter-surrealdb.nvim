@@ -41,13 +41,9 @@ local function setup()
 	(scripting_content) @javascript
 	]]
 
-	local runtime_path = vim.api.nvim_list_runtime_paths()[1]
-	if vim.fn.isdirectory(runtime_path .. "/queries") == 0 then
-		vim.fn.mkdir(runtime_path .. "/queries")
-	end
-	if vim.fn.isdirectory(runtime_path .. "/queries/surrealdb") == 0 then
-		vim.fn.mkdir(runtime_path .. "/queries/surrealdb")
-	end
+	local runtime_path = vim.fn.stdpath("cache")
+	vim.opt.runtimepath:append(runtime_path)
+	vim.fn.mkdir(runtime_path .. "/queries/surrealdb", "p")
 
 	if vim.fn.isdirectory(runtime_path .. "/queries/surrealdb") == 1 then
 		local highlights_file = io.open(runtime_path .. "/queries/surrealdb/highlights.scm", "w")
