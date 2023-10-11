@@ -1,9 +1,10 @@
 local function setup()
-	vim.api.nvim_command([[
-	augroup SurqlFiletype
-	  autocmd BufRead,BufNewFile *.surql :set filetype=surql
-	augroup END
-	]])
+	vim.filetype.add({
+	    extension = {
+	        surql = "surql",
+	        surrealql = "surql"
+	    }
+	});
 
 	local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
 	parser_config.surrealdb = {
