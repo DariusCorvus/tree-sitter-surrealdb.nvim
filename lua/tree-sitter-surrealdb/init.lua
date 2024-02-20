@@ -31,7 +31,7 @@ local function setup()
 	(record) @type
 	(function) @function
 	(property) @field
-	(identifier) @constant @text.emphasis (#set! "priority" 120)
+	(identifier) @text.emphasis
 	(casting) @conceal
 	(duration) @number
 	(type) @type
